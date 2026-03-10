@@ -29,13 +29,6 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
-.dot-fade {
-  background-image: radial-gradient(#0a0a0a 0.8px, transparent 0.8px);
-  background-size: 6px 6px;
-  mask-image: linear-gradient(to right, transparent 0%, black 30%, black 70%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%, black 70%, transparent 100%);
-}
-
 .hero-shadow {
   box-shadow:
     0 30px 70px rgba(0, 0, 0, 0.08),

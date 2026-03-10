@@ -1,0 +1,1 @@
+export { StartupTemplate } from "./StartupTemplate";
