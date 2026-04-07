@@ -4,9 +4,9 @@ import { BackgroundPaths } from "@/components/ui/background-paths";
 import { Button } from "@/components/ui";
 
 const navItems = [
-  { label: "Components", href: "/components" },
-  { label: "Templates", href: "/templates" },
-  { label: "Docs", href: "/docs/getting-started" },
+  { label: "About", href: "#about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Testimonials", href: "#testimonials" },
 ];
 
 export function HeroSection() {
@@ -37,37 +37,32 @@ export function HeroSection() {
           </nav>
 
           <Button size="sm" asChild>
-            <Link
-              href="https://github.com/FarhanYousafzai0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full px-5"
-            >
-              Start on Github
+            <Link href="#contact" className="rounded-full px-5">
+              Let's Talk
             </Link>
           </Button>
         </header>
 
         <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col items-center justify-center pb-12 pt-8 text-center sm:pb-16">
           <p className="font-alpha-lyrae text-xs font-medium uppercase tracking-[0.28em] text-zinc-500">
-            Rebooting UI Systems
+            Building AI Agents, Websites & Intelligent Systems
           </p>
 
           <h1 className="font-alpha-lyrae mt-5 text-balance text-4xl font-medium leading-[1.08] tracking-tight text-zinc-900 sm:text-5xl md:text-6xl">
-            Rebooting the Creative Connection.
+            Building Digital Experiences That Matter
           </h1>
 
           <p className="mt-5 max-w-2xl text-pretty text-sm leading-7 text-zinc-600 sm:text-base">
-            High-end components and templates for modern product teams. Build quickly, keep visual
-            quality high, and scale your UI system without friction.
+            Blending design and development to build modern, high-performing
+            websites that leave a lasting impression.
           </p>
 
           <div className="mt-9 flex items-center gap-3">
-            <Button size="lg" className="rounded-full px-7">
-              Join Waitlist
+            <Button size="lg" className="rounded-full px-7" asChild>
+              <Link href="#projects">View My Work</Link>
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full px-7">
-              Explore Components
+            <Button size="lg" variant="outline" className="rounded-full px-7" asChild>
+              <Link href="#contact">Let's Talk</Link>
             </Button>
           </div>
         </div>
