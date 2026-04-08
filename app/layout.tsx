@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Frontex UI",
-  description: "Modern component library platform",
+  title: "Muhammad Farhan — Full-Stack Developer & AI Automation",
+  description:
+    "I build products that ship and automations that save you hours. Full-stack development, AI agents, and smart automation — built fast, built right.",
   icons: {
     icon: "/Frontex_UI.png",
     apple: "/Frontex_UI.png",

@@ -16,7 +16,7 @@ export function HeroLetsTalkButton() {
         onMouseEnter={() => iconRef.current?.startAnimation()}
         onMouseLeave={() => iconRef.current?.stopAnimation()}
       >
-        Let's Talk
+        Let&apos;s Talk
         <SendIcon
           ref={iconRef}
           size={14}
