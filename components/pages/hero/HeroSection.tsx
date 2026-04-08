@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BackgroundPaths } from "@/components/ui/background-paths";
-import { Button } from "@/components/ui";
+import { HeroLetsTalkButton } from "./HeroLetsTalkButton";
+import { HeroViewWorkButton } from "./HeroViewWorkButton";
 
 const navItems = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Testimonials", href: "#testimonials" },
+  { label: "Blogs", href: "#blogs" },
 ];
 
 export function HeroSection() {
@@ -36,11 +38,7 @@ export function HeroSection() {
             ))}
           </nav>
 
-          <Button size="sm" asChild>
-            <Link href="#contact" className="rounded-full px-5">
-              Let's Talk
-            </Link>
-          </Button>
+          <HeroLetsTalkButton />
         </header>
 
         <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col items-center justify-center pb-12 pt-8 text-center sm:pb-16">
@@ -58,12 +56,7 @@ export function HeroSection() {
           </p>
 
           <div className="mt-9 flex items-center gap-3">
-            <Button size="lg" className="rounded-full px-7" asChild>
-              <Link href="#projects">View My Work</Link>
-            </Button>
-            <Button size="lg" variant="outline" className="rounded-full px-7" asChild>
-              <Link href="#contact">Let's Talk</Link>
-            </Button>
+            <HeroViewWorkButton />
           </div>
         </div>
       </div>
