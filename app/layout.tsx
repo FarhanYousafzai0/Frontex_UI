@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   description:
     "I build products that ship and automations that save you hours. Full-stack development, AI agents, and smart automation — built fast, built right.",
   icons: {
-    icon: "/Frontex_UI.png",
-    apple: "/Frontex_UI.png",
+    icon: "/portfolio-avatar-icon.png",
+    apple: "/portfolio-avatar-icon.png",
   },
 };
 
