@@ -200,8 +200,8 @@ export function HeroSection() {
                 key={item.label}
                 href={item.href}
                 className={`relative px-4 py-2 font-inter text-sm transition-colors ${
-                  item.isActive
-                    ? "text-[#FFFFFF]"
+                  pillIndex === index
+                    ? "text-[#111111]"
                     : "text-white/75 hover:text-[#FFFFFF]"
                 }`}
                 onMouseEnter={() => setHoveredNav(index)}
@@ -209,19 +209,21 @@ export function HeroSection() {
                 {pillIndex === index && (
                   <motion.span
                     layoutId="nav-pill"
-                    className="absolute inset-0 rounded-lg bg-white/15 backdrop-blur-sm"
+                    className="absolute inset-0 block rounded-xl border border-white/40 p-[3px]"
                     transition={{
                       type: "spring",
                       stiffness: 400,
                       damping: 30,
                     }}
-                  />
+                  >
+                    <span className="block h-full w-full rounded-[9px] bg-[#F4EBDD] shadow-[0_8px_20px_rgba(0,0,0,0.2)]" />
+                  </motion.span>
                 )}
                 <span className="relative z-[1]">{item.label}</span>
                 {item.isActive && (
                   <motion.div
                     layoutId="nav-dot"
-                    className="absolute -bottom-1 left-1/2 h-[2px] w-1.5 -translate-x-1/2 rounded-full bg-white"
+                    className="absolute -bottom-1 left-1/2 h-[2px] w-1.5 -translate-x-1/2 rounded-full bg-[#111111]/75"
                     transition={{
                       type: "spring",
                       stiffness: 400,
